@@ -154,17 +154,6 @@ class _HomeState extends State<PaginaInicial> {
                     trailing:
                         Text(estado != null ? estado.toString() : "Loading"),
                   ),
-                  ListTile(
-                    leading: FaIcon(FontAwesomeIcons.streetView),
-                    title: Text("Localização: "),
-                    trailing: Text(
-                      lon != null
-                          ? "Lon" + lon.toString()
-                          : "Loading" + "\n" + lat != null
-                              ? "Lat" + lat.toString()
-                              : "Loading",
-                    ),
-                  ),
                 ],
               )))
     ]));
